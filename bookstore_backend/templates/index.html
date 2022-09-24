@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% load static tailwind_tags %}
+{% load sass_tags %}
+{% tailwind_css %}
+<link
+      href="{% sass_src 'css/index.scss' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+{% block content%}
+<p class="text-blue-500">Welcome {{id}} </p>
+<div class="container mx-auto">
+  <section class="flex items-center justify-center h-screen">
+    <h1 class="text-5xl">Django + Tailwind = ❤️</h1>
+  </section>
+</div>
+{% endblock %}
